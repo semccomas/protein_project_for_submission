@@ -1,8 +1,8 @@
 # protein_project_for_submission
 Here is information on each program that I have submitted for ease of nagivation:
-This is written in order of how I proceeded with my predictor
+This is written in order of how I proceeded with my predictor.
 It is worth noting that because I was only able to ssh in to my machine and not actually sit at the desk,
-some programs are written for my own computer and thus the directories are different
+some programs are written for my own computer and thus the directories are different.
 
 
 point1final.py ---> extract features from the database membrane-alpha.3line and append target values based on structure
@@ -12,8 +12,6 @@ point2new.py ---> creating a list of FASTA files for entry into CD-HIT and then 
 seq_for_BLAST.py ---> separating all 313 sequences from the database into individual files to be used while running PSIBLAST
 
 sarahblast.sh ---> automating the BLAST running process for all files that came from seq_for_BLAST.py
-
-cat_cross_val_sets.sh ---> creating the cross validation sets and using set1 as my validation set for final optimization
 
 structures_for_BLAST.py --> as seq_for_BLAST, I made 313 files of all the structure so that I could append the target values properly to the BLAST output for the 
 corresponding sequence and use them in psi_parse*
@@ -27,6 +25,8 @@ BLAST_to_SVM_sets.py ---> print the filename (1-313) for each sequence that belo
 names_of_seqs_in_sets.py put together the BLAST output files (parsed by psi_parse) to be in the proper cross validation sets as created by point2new.py 
 
 names_of_seqs_in_sets.py ---> took the output from BLAST_to_SVM_sets.py and concatenated the contents (BLAST outputs) to the proper cross validation sets
+
+cat_cross_val_sets.sh ---> creating the training sets from the cross validation sets and using set1 as my validation set for final optimization
 
 svm_automated.sh ---> running SVM learn and SVM classify automatically. I would simply comment out either learn or classify depending on which I wanted to run 
 and change the output directory. I would also just change the model names  based on what kernel and parameters I was running. 
