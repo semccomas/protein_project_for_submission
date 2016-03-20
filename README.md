@@ -1,5 +1,6 @@
 # protein_project_for_submission
 Here is information on each program that I have submitted for ease of nagivation:
+This is written in order of how I proceeded with my predictor
 It is worth noting that because I was only able to ssh in to my machine and not actually sit at the desk,
 some programs are written for my own computer and thus the directories are different
 
